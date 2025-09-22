@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: minecraft-server
+    env: docker
+    plan: free
+    autoDeploy: false
+    disk:
+      name: mc-data
+      mountPath: /server
+      sizeGB: 1
